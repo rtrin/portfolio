@@ -1,0 +1,60 @@
+name: "Richard Trinh"
+email: "richardtrinh452@gmail.com"
+github: "rtrin"
+linkedin: "rtrin"
+twitter: ""
+website: ""
+cli: "cursor"
+
+sections:
+  - hero
+  - about
+  - experience
+  - projects
+  - skills
+  - education
+  - contact
+
+design:
+  creativity: 5
+  simplicity: 9
+  playfulness: 4
+  animation: 5
+  color_intensity: 4
+
+content:
+  tone: "conversational"
+  length: "balanced"
+  focus: "experience"
+
+ai:
+  quality_bar: 7
+  research_depth: 6
+  copy_creativity: 5
+
+notes: |
+  Richard Trinh
+  
+  CS Student @ Colby College
+  Student developer studying Computer Science
+  Interests: optimizing online experiences, learning new technologies, building with code
+  
+  Work Experience:
+  
+  Software Engineer Intern at Hashicorp, Garmin, Netsmart
+  
+  Contact:
+  
+  LinkedIn: linkedin.com/in/rtrin
+  GitHub: github.com/rtrin
+  Email: richardtrinh452@gmail.com
+  Resume: Available via Google Drive link
+  
+  Projects:
+  
+  Arcaea Charts - Chart info and practice tool
+  Scholar Ninja - Scholarship finder app
+  Vidsnap - AI video summarizer
+  ScholarAI - PDF document search
+  Reef Annotator - Atoll segmentation ML model
+  Graph Algorithm Visualizer - Grid simulation of DFS, BFS, A*
