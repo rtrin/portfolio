@@ -26,7 +26,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.6, -0.05, 0.01, 0.99] }}
-          className="mb-6"
+          className="mb-8"
         >
           <h1 className="text-5xl md:text-6xl font-medium mb-4">
             Richard Trinh
@@ -69,10 +69,24 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: [0.6, -0.05, 0.01, 0.99] }}
-          className="text-lg text-white/80 leading-relaxed max-w-2xl mb-6"
+          className="text-lg text-white/80 leading-relaxed max-w-2xl mb-8"
         >
           CS student at Colby College that enjoys building distributed systems and optimizing performance at scale.
         </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15, ease: [0.6, -0.05, 0.01, 0.99] }}
+        >
+          <a 
+            href="https://drive.google.com/file/d/1d2RfjsatcKRRyyIfMJtt9EPOOC8_tEV7/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white underline decoration-white/40 hover:decoration-white text-lg font-medium inline-flex items-center gap-2 transition-all hover:gap-2.5"
+          >
+            Resume <ExternalLink size={18} className="text-white" />
+          </a>
+        </motion.div>
       </section>
 
       {/* About Section */}
