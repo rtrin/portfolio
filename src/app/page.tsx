@@ -27,14 +27,14 @@ export default function Home() {
         {/* Grid Pattern Background */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <GridPattern
-            width={30}
-            height={30}
+            width={40}
+            height={40}
             x={-1}
             y={-1}
             strokeDasharray="4 2"
             className={cn(
-              "fill-white/5 stroke-white/10",
-              "mask-[radial-gradient(400px_circle_at_center,white,transparent)]"
+              "fill-white/2 stroke-white/10",
+              "mask-[radial-gradient(ellipse_800px_250px_at_center,white,transparent)]"
             )}
           />
         </div>
@@ -234,7 +234,7 @@ export default function Home() {
                 <p className="text-white/70">Netsmart</p>
               </div>
               <p className="text-white/50 text-sm mt-1 md:mt-0">June 2024 – Aug 2024</p>
-            </div>
+        </div>
             <p className="text-white/50 text-sm mb-4">Overland Park, KS</p>
             <p className="text-white/90 leading-relaxed">
               Developed internal tools and optimized backend services for healthcare software. Built a document tracking system that streamlined support workflows for multiple engineering teams, and improved database query performance that significantly reduced application load times. Worked with modern web technologies and Java-based microservices to deliver tools that improved developer productivity.
@@ -380,7 +380,7 @@ export default function Home() {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
-            >
+        >
               View on GitHub →
             </a>
           </motion.div>
