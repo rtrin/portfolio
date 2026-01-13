@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { GridPattern } from '@/components/ui/grid-pattern';
+import { cn } from '@/lib/utils';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -21,14 +23,28 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#121212] text-white">
       {/* Hero Section */}
-      <section className="max-w-4xl mx-auto px-6 pt-24 md:pt-32 pb-16">
+      <section className="relative max-w-4xl mx-auto px-6 pt-24 md:pt-32 pb-16 overflow-hidden">
+        {/* Grid Pattern Background */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <GridPattern
+            width={30}
+            height={30}
+            x={-1}
+            y={-1}
+            strokeDasharray="4 2"
+            className={cn(
+              "fill-white/5 stroke-white/10",
+              "mask-[radial-gradient(400px_circle_at_center,white,transparent)]"
+            )}
+          />
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.6, -0.05, 0.01, 0.99] }}
-          className="mb-8"
+          className="mb-8 relative z-10"
         >
-          <h1 className="text-5xl md:text-6xl font-medium mb-4">
+          <h1 className="text-5xl md:text-6xl font-medium mb-4 bg-linear-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
             Richard Trinh
           </h1>
           <p className="text-xl md:text-2xl text-white/70">
@@ -39,7 +55,7 @@ export default function Home() {
             <div className="flex items-center gap-4">
               <a 
                 href="mailto:richardtrinh452@gmail.com"
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-blue-400/80 hover:text-blue-300 transition-colors"
                 aria-label="Email"
               >
                 <Mail size={20} />
@@ -48,7 +64,7 @@ export default function Home() {
                 href="https://github.com/rtrin"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-blue-400/80 hover:text-blue-300 transition-colors"
                 aria-label="GitHub"
               >
                 <Github size={20} />
@@ -57,7 +73,7 @@ export default function Home() {
                 href="https://linkedin.com/in/rtrin"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-blue-400/80 hover:text-blue-300 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
@@ -82,9 +98,9 @@ export default function Home() {
             href="https://drive.google.com/file/d/1d2RfjsatcKRRyyIfMJtt9EPOOC8_tEV7/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white underline decoration-white/40 hover:decoration-white text-lg font-medium inline-flex items-center gap-2 transition-all hover:gap-2.5"
+            className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 text-lg font-medium inline-flex items-center gap-2 transition-all hover:gap-2.5"
           >
-            Resume <ExternalLink size={18} className="text-white" />
+            Resume <ExternalLink size={18} className="text-blue-400" />
           </a>
         </motion.div>
       </section>
@@ -96,7 +112,7 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-medium mb-8"
+          className="text-3xl font-medium mb-8 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
         >
           About
         </motion.h2>
@@ -123,7 +139,7 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-medium mb-12"
+          className="text-3xl font-medium mb-12 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
         >
           Experience
         </motion.h2>
@@ -153,17 +169,17 @@ export default function Home() {
                 href="https://www.hashicorp.com/en/products/boundary"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:underline text-sm font-medium inline-flex items-center gap-1.5 transition-all"
+                className="text-blue-400 hover:text-blue-300 hover:underline text-sm font-medium inline-flex items-center gap-1.5 transition-all"
               >
-                Boundary <ExternalLink size={16} className="text-white/90" />
+                Boundary <ExternalLink size={16} className="text-blue-400/90" />
               </a>
               <a 
                 href="https://github.com/hashicorp/boundary/pull/5939"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:underline text-sm font-medium inline-flex items-center gap-1.5 transition-all"
+                className="text-blue-400 hover:text-blue-300 hover:underline text-sm font-medium inline-flex items-center gap-1.5 transition-all"
               >
-                PR #5939 <ExternalLink size={16} className="text-white/90" />
+                PR #5939 <ExternalLink size={16} className="text-blue-400/90" />
               </a>
             </div>
             <p className="text-white/90 leading-relaxed">
@@ -189,17 +205,17 @@ export default function Home() {
                 href="https://www.garmin.com/en-US/c/subscription-plans/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:underline text-sm font-medium inline-flex items-center gap-1.5 transition-all"
+                className="text-blue-400 hover:text-blue-300 hover:underline text-sm font-medium inline-flex items-center gap-1.5 transition-all"
               >
-                Subscription Plans <ExternalLink size={16} className="text-white/90" />
+                Subscription Plans <ExternalLink size={16} className="text-blue-400/90" />
               </a>
               <a 
                 href="https://nalmadi.github.io/student-interview-Richard-Trinh/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:underline text-sm font-medium inline-flex items-center gap-1.5 transition-all"
+                className="text-blue-400 hover:text-blue-300 hover:underline text-sm font-medium inline-flex items-center gap-1.5 transition-all"
               >
-                Interview <ExternalLink size={16} className="text-white/90" />
+                Interview <ExternalLink size={16} className="text-blue-400/90" />
               </a>
             </div>
             <p className="text-white/90 leading-relaxed">
@@ -234,7 +250,7 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-medium mb-8"
+          className="text-3xl font-medium mb-8 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
         >
           Education
         </motion.h2>
@@ -257,7 +273,7 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-medium mb-12"
+          className="text-3xl font-medium mb-12 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
         >
           Projects
         </motion.h2>
@@ -283,7 +299,7 @@ export default function Home() {
               href="https://github.com/rtrin/arcaeacharts" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white/80 hover:text-white text-sm inline-flex items-center gap-1 transition-colors"
+              className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
               View on GitHub →
             </a>
@@ -303,7 +319,7 @@ export default function Home() {
               href="https://github.com/rtrin/simple-go-shell" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white/80 hover:text-white text-sm inline-flex items-center gap-1 transition-colors"
+              className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
               View on GitHub →
             </a>
@@ -323,7 +339,7 @@ export default function Home() {
               href="https://github.com/rtrin/vidsnap" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white/80 hover:text-white text-sm inline-flex items-center gap-1 transition-colors"
+              className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
               View on GitHub →
             </a>
@@ -343,7 +359,7 @@ export default function Home() {
               href="https://github.com/rtrin/atoll-segmentation" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white/80 hover:text-white text-sm inline-flex items-center gap-1 transition-colors"
+              className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
               View on GitHub →
             </a>
@@ -363,7 +379,7 @@ export default function Home() {
               href="https://github.com/rtrin/pathfinding-visualizer" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white/80 hover:text-white text-sm inline-flex items-center gap-1 transition-colors"
+              className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
               View on GitHub →
             </a>
@@ -390,7 +406,7 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-medium mb-12"
+          className="text-3xl font-medium mb-12 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
         >
           Skills
         </motion.h2>
