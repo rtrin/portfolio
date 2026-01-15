@@ -243,29 +243,6 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Education Section */}
-      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-white/10">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-          className="text-3xl font-medium mb-8 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
-        >
-          Education
-        </motion.h2>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-        >
-          <h3 className="text-xl font-medium mb-2">Colby College</h3>
-          <p className="text-white/70 mb-1">B.A. in Computer Science</p>
-          <p className="text-white/50 text-sm">GPA: 3.66 | Expected: December 2026</p>
-        </motion.div>
-      </section>
-
       {/* Projects Section */}
       <section className="max-w-4xl mx-auto px-6 py-16 border-t border-white/10">
         <motion.h2
@@ -481,6 +458,29 @@ export default function Home() {
               <li>CI/CD</li>
             </ul>
           </motion.div>
+        </motion.div>
+      </section>
+
+      {/* Education Section */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-white/10">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="text-3xl font-medium mb-8 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
+        >
+          Education
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+        >
+          <h3 className="text-xl font-medium mb-2">Colby College</h3>
+          <p className="text-white/70 mb-1">B.A. in Computer Science</p>
+          <p className="text-white/50 text-sm">GPA: 3.66 | Expected: December 2026</p>
         </motion.div>
       </section>
 
