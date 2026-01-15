@@ -416,7 +416,7 @@ export default function Home() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid md:grid-cols-3 gap-8"
+          className="grid md:grid-cols-4 gap-8"
         >
           <motion.div variants={fadeInUp}>
             <h3 className="text-lg font-medium text-white/90 mb-4">Languages</h3>
@@ -427,6 +427,7 @@ export default function Home() {
               <li>Python</li>
               <li>C, C++</li>
               <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>HTML, CSS</li>
               <li>SQL</li>
               <li>Bash</li>
@@ -439,8 +440,10 @@ export default function Home() {
               <li>.NET</li>
               <li>Spring Boot</li>
               <li>React</li>
+              <li>Next.js</li>
               <li>Angular</li>
               <li>Node.js</li>
+              <li>Express.js</li>
               <li>PostgreSQL</li>
               <li>Redis</li>
             </ul>
@@ -449,14 +452,33 @@ export default function Home() {
           <motion.div variants={fadeInUp}>
             <h3 className="text-lg font-medium text-white/90 mb-4">Tools & Platforms</h3>
             <ul className="space-y-2 text-white/80">
-              <li>Azure, AWS</li>
+              <li>Azure</li>
+              <li>AWS</li>
               <li>Terraform</li>
               <li>Docker</li>
               <li>Kubernetes</li>
               <li>Linux/Unix</li>
               <li>Git</li>
+              <li>GitHub</li>
+              <li>GitHub Actions</li>
               <li>gRPC</li>
+              <li>RabbitMQ</li>
+              <li>Datadog</li>
+            </ul>
+          </motion.div>
+
+          <motion.div variants={fadeInUp}>
+            <h3 className="text-lg font-medium text-white/90 mb-4">Concepts</h3>
+            <ul className="space-y-2 text-white/80">
+              <li>Microservices</li>
               <li>Distributed Systems</li>
+              <li>API Design</li>
+              <li>Object-Oriented Programming</li>
+              <li>Load Testing</li>
+              <li>Caching</li>
+              <li>Database Optimization</li>
+              <li>Testing & TDD</li>
+              <li>CI/CD</li>
             </ul>
           </motion.div>
         </motion.div>
