@@ -159,7 +159,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
               <div>
                 <h3 className="text-xl font-medium mb-1">Software Engineer Intern</h3>
-                <p className="text-white/70">HashiCorp</p>
+                <p className="text-white/70">HashiCorp (IBM)</p>
               </div>
               <p className="text-white/50 text-sm mt-1 md:mt-0">June 2025 – Aug 2025</p>
             </div>
