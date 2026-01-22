@@ -267,6 +267,26 @@ export default function Home() {
             whileHover={{ y: -2 }}
             className="border border-white/10 rounded-lg p-6 hover:border-white/20 transition-colors"
           >
+            <h3 className="text-xl font-medium mb-2">Koetalk</h3>
+            <p className="text-white/60 text-sm mb-4">TypeScript, React, Bun, Hono, PostgreSQL (Supabase), tRPC</p>
+            <p className="text-white/80 mb-4">
+              AI-powered language learning web app for practicing conversations in 10 languages (Japanese, Vietnamese, English, Spanish, French, Korean, Italian, Chinese, Portuguese, German) with real-time speech recognition, AI tutor responses, and natural text-to-speech. Includes roleplay scenarios, vocabulary tracking, and subscription-based tiered access.
+            </p>
+            <a 
+              href="https://koetalk.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
+            >
+              Visit Website <ExternalLink className="w-3 h-3" />
+            </a>
+          </motion.div>
+
+          <motion.div
+            variants={fadeInUp}
+            whileHover={{ y: -2 }}
+            className="border border-white/10 rounded-lg p-6 hover:border-white/20 transition-colors"
+          >
             <h3 className="text-xl font-medium mb-2">Arcaea Charts</h3>
             <p className="text-white/60 text-sm mb-4">TypeScript, React, PostgreSQL</p>
             <p className="text-white/80 mb-4">
