@@ -268,9 +268,9 @@ export default function Home() {
             className="border border-white/10 rounded-lg p-6 hover:border-white/20 transition-colors"
           >
             <h3 className="text-xl font-medium mb-2">Koetalk</h3>
-            <p className="text-white/60 text-sm mb-4">TypeScript, React, Bun, Hono, PostgreSQL (Supabase), tRPC</p>
+            <p className="text-white/60 text-sm mb-4">TypeScript, React, Bun, Hono, PostgreSQL, tRPC</p>
             <p className="text-white/80 mb-4">
-              AI-powered language learning web app for practicing conversations in 10 languages (Japanese, Vietnamese, English, Spanish, French, Korean, Italian, Chinese, Portuguese, German) with real-time speech recognition, AI tutor responses, and natural text-to-speech. Includes roleplay scenarios, vocabulary tracking, and subscription-based tiered access.
+              AI-powered language learning app for practicing conversations in 10 languages with real-time speech recognition and text-to-speech.
             </p>
             <a 
               href="https://koetalk.com" 
