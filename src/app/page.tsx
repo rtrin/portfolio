@@ -53,14 +53,14 @@ export default function Home() {
           <div className="flex items-center gap-4 mt-2">
             <p className="text-white/50">Based in Olathe, Kansas</p>
             <div className="flex items-center gap-4">
-              <a 
+              <a
                 href="mailto:richardtrinh452@gmail.com"
                 className="text-blue-400/80 hover:text-blue-300 transition-colors"
                 aria-label="Email"
               >
                 <Mail size={20} />
               </a>
-              <a 
+              <a
                 href="https://github.com/rtrin"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -69,7 +69,7 @@ export default function Home() {
               >
                 <Github size={20} />
               </a>
-              <a 
+              <a
                 href="https://linkedin.com/in/rtrin"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -94,7 +94,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15, ease: [0.6, -0.05, 0.01, 0.99] }}
         >
-          <a 
+          <a
             href="https://drive.google.com/file/d/1d2RfjsatcKRRyyIfMJtt9EPOOC8_tEV7/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
@@ -130,7 +130,7 @@ export default function Home() {
             <a href="https://www.ntst.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Netsmart</a> working on distributed systems and backend optimization.
           </p>
           <p className="text-white/80 leading-relaxed">
-            In general, I&apos;m interested in building things that bring real value to users.
+            I&apos;m interested in building things that bring real value to users.
           </p>
         </motion.div>
       </section>
@@ -146,7 +146,7 @@ export default function Home() {
         >
           Experience
         </motion.h2>
-        
+
         <motion.div
           variants={staggerContainer}
           initial="initial"
@@ -168,7 +168,7 @@ export default function Home() {
             </div>
             <p className="text-white/50 text-sm mb-2">San Francisco, CA</p>
             <div className="flex flex-wrap gap-4 mb-4">
-              <a 
+              <a
                 href="https://www.hashicorp.com/en/products/boundary"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -176,7 +176,7 @@ export default function Home() {
               >
                 Boundary <ExternalLink size={16} className="text-blue-400/90" />
               </a>
-              <a 
+              <a
                 href="https://github.com/hashicorp/boundary/pull/5939"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -204,7 +204,7 @@ export default function Home() {
             </div>
             <p className="text-white/50 text-sm mb-2">Yarmouth, ME</p>
             <div className="flex flex-wrap gap-4 mb-4">
-              <a 
+              <a
                 href="https://www.garmin.com/en-US/c/subscription-plans/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -212,7 +212,7 @@ export default function Home() {
               >
                 Subscription Plans <ExternalLink size={16} className="text-blue-400/90" />
               </a>
-              <a 
+              <a
                 href="https://nalmadi.github.io/student-interview-Richard-Trinh/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -237,7 +237,7 @@ export default function Home() {
                 <p className="text-white/70">Netsmart</p>
               </div>
               <p className="text-white/50 text-sm mt-1 md:mt-0">June 2024 – Aug 2024</p>
-        </div>
+            </div>
             <p className="text-white/50 text-sm mb-4">Overland Park, KS</p>
             <p className="text-white/90 leading-relaxed">
               Developed internal tools and optimized backend services for healthcare software. Built a document tracking system that streamlined support workflows for multiple engineering teams, and improved database query performance that significantly reduced application load times. Worked with modern web technologies and Java-based microservices to deliver tools that improved developer and consultant productivity.
@@ -257,7 +257,7 @@ export default function Home() {
         >
           Projects
         </motion.h2>
-        
+
         <motion.div
           variants={staggerContainer}
           initial="initial"
@@ -270,14 +270,33 @@ export default function Home() {
             whileHover={{ y: -2 }}
             className="border border-white/10 rounded-lg p-6 hover:border-white/20 transition-colors"
           >
+            <h3 className="text-xl font-medium mb-2">Langstore</h3>
+            <p className="text-white/60 text-sm mb-4">TypeScript, Next.js, Supabase, Stack Auth, Gemini AI</p>
+            <p className="text-white/80 mb-4">
+              A webapp for organizing language learning materials. Integrates video and PDF viewing and includes AI vocab and grammar extraction.
+            </p>
+            <a
+              href="https://langstore.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
+            >
+              Visit Website <ExternalLink className="w-3 h-3" />
+            </a>
+          </motion.div>
+          <motion.div
+            variants={fadeInUp}
+            whileHover={{ y: -2 }}
+            className="border border-white/10 rounded-lg p-6 hover:border-white/20 transition-colors"
+          >
             <h3 className="text-xl font-medium mb-2">Koetalk</h3>
             <p className="text-white/60 text-sm mb-4">TypeScript, React, Bun, Hono, PostgreSQL, tRPC</p>
             <p className="text-white/80 mb-4">
               AI-powered language learning app for practicing conversations with real-time speech recognition and TTS.
             </p>
-            <a 
-              href="https://koetalk.com" 
-              target="_blank" 
+            <a
+              href="https://koetalk.com"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
@@ -295,9 +314,9 @@ export default function Home() {
             <p className="text-white/80 mb-4">
               Web app for browsing and filtering Arcaea rhythm game charts with integrated YouTube chart previews.
             </p>
-            <a 
-              href="https://github.com/rtrin/arcaeacharts" 
-              target="_blank" 
+            <a
+              href="https://github.com/rtrin/arcaeacharts"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
@@ -315,9 +334,9 @@ export default function Home() {
             <p className="text-white/80 mb-4">
               A simple shell implementation written in Go for command execution and process management.
             </p>
-            <a 
-              href="https://github.com/rtrin/simple-go-shell" 
-              target="_blank" 
+            <a
+              href="https://github.com/rtrin/simple-go-shell"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
@@ -335,9 +354,9 @@ export default function Home() {
             <p className="text-white/80 mb-4">
               Tool for automatically summarizing video content using AI.
             </p>
-            <a 
-              href="https://github.com/rtrin/vidsnap" 
-              target="_blank" 
+            <a
+              href="https://github.com/rtrin/vidsnap"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
@@ -355,9 +374,9 @@ export default function Home() {
             <p className="text-white/80 mb-4">
               U-NET computer vision model used to segment 1,500+ reef island images for climate change research.
             </p>
-            <a 
-              href="https://github.com/rtrin/atoll-segmentation" 
-              target="_blank" 
+            <a
+              href="https://github.com/rtrin/atoll-segmentation"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
             >
@@ -375,12 +394,12 @@ export default function Home() {
             <p className="text-white/80 mb-4">
               Interactive visualization tool for exploring graph traversal algorithms.
             </p>
-            <a 
-              href="https://github.com/rtrin/pathfinding-visualizer" 
-              target="_blank" 
+            <a
+              href="https://github.com/rtrin/pathfinding-visualizer"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400/80 hover:text-blue-300 text-sm inline-flex items-center gap-1 transition-colors"
-        >
+            >
               View on GitHub →
             </a>
           </motion.div>
@@ -410,7 +429,7 @@ export default function Home() {
         >
           Skills
         </motion.h2>
-        
+
         <motion.div
           variants={staggerContainer}
           initial="initial"
