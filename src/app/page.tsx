@@ -331,7 +331,7 @@ export default function Home() {
             className="border border-white/10 rounded-lg p-6 hover:border-white/20 transition-colors"
           >
             <h3 className="text-xl font-medium mb-2">Vidsnap</h3>
-            <p className="text-white/60 text-sm mb-4">TypeScript, React, PostgreSQL</p>
+            <p className="text-white/60 text-sm mb-4">TypeScript, React, PostgreSQL, OpenAI API</p>
             <p className="text-white/80 mb-4">
               Tool for automatically summarizing video content using AI.
             </p>
