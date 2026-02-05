@@ -186,7 +186,7 @@ export default function Home() {
               </a>
             </div>
             <p className="text-white/90 leading-relaxed">
-              Worked on Boundary, HashiCorp&apos;s identity-based access management platform, focusing on performance optimization and reliability. Identified and resolved critical performance bottlenecks affecting major customers, built load testing infrastructure, and fixed CLI issues that improved stability for thousands of users. Created monitoring dashboards and refactored core services to handle high-scale workloads.
+              Worked on Boundary, HashiCorp&apos;s identity-based access management platform, focusing on performance optimization and reliability. Identified and resolved performance bottlenecks affecting customers, built load testing infrastructure, and fixed CLI issues that improved stability for thousands of users. Created monitoring dashboards and refactored core services to handle high-scale workloads.
             </p>
           </motion.div>
 
@@ -222,7 +222,7 @@ export default function Home() {
               </a>
             </div>
             <p className="text-white/90 leading-relaxed">
-              Built backend infrastructure for Garmin&apos;s subscription billing system. Developed microservices using .NET and gRPC, implemented caching strategies that improved API performance, and created automation tools that saved the company over $120k annually. Worked across the stack from database optimization to infrastructure as code, shipping features that directly impacted customer payments and billing workflows.
+              Built backend infrastructure for Garmin&apos;s subscription billing system. Developed C#/.NET/gRPC microservice features that save the company 100k+ annually and implemented caching systems that improved account API performance. Worked across the stack from database optimization to infrastructure as code, shipping software that directly impacted customer payments and billing workflows.
             </p>
           </motion.div>
 
@@ -240,7 +240,7 @@ export default function Home() {
         </div>
             <p className="text-white/50 text-sm mb-4">Overland Park, KS</p>
             <p className="text-white/90 leading-relaxed">
-              Developed internal tools and optimized backend services for healthcare software. Built a document tracking system that streamlined support workflows for multiple engineering teams, and improved database query performance that significantly reduced application load times. Worked with modern web technologies and Java-based microservices to deliver tools that improved developer productivity.
+              Developed internal tools and optimized backend services for healthcare software. Built a document tracking system that streamlined support workflows for multiple engineering teams, and improved database query performance that significantly reduced application load times. Worked with modern web technologies and Java-based microservices to deliver tools that improved developer and consultant productivity.
             </p>
           </motion.div>
         </motion.div>
