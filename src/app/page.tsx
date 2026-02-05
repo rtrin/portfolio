@@ -87,7 +87,7 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.6, -0.05, 0.01, 0.99] }}
           className="text-lg text-white/80 leading-relaxed max-w-2xl mb-8"
         >
-          Computer Science student at Colby College with experience in distributed systems and backend/cloud development.
+          Developer with experience in full-stack, backend, distributed systems, and cloud development.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -124,13 +124,13 @@ export default function Home() {
           className="prose prose-invert max-w-none"
         >
           <p className="text-white/80 leading-relaxed mb-4">
-            I&apos;m a CS student at Colby College, graduating in May 2026. I&apos;ve interned at companies like{" "}
-            <a href="https://www.hashicorp.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">HashiCorp</a>, {" "}
-            <a href="https://www.garmin.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Garmin</a>, and {" "}
-            <a href="https://www.ntst.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Netsmart</a> working on cloud infrastructure, payment systems, and healthcare software respectively.
+            Hey, I&apos;m Richard, a CS student at Colby College (graduating May 2026). I&apos;ve had the chance to intern at{" "}
+            <a href="https://www.hashicorp.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">HashiCorp (IBM)</a>,{" "}
+            <a href="https://www.garmin.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Garmin</a>, and{" "}
+            <a href="https://www.ntst.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Netsmart</a>, where I worked on everything from cloud infrastructure to payment systems.
           </p>
           <p className="text-white/80 leading-relaxed">
-            I enjoy building things that bring real value to users.
+            In general, I just like building things that bring real value to people.
           </p>
         </motion.div>
       </section>
@@ -144,7 +144,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-3xl font-medium mb-12 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
         >
-          Experience
+          Where I've Worked
         </motion.h2>
 
         <motion.div
@@ -186,7 +186,7 @@ export default function Home() {
               </a>
             </div>
             <p className="text-white/90 leading-relaxed">
-              Worked on Boundary, HashiCorp&apos;s identity-based access management platform, focusing on performance optimization and reliability. Identified and resolved performance bottlenecks affecting customers, built load testing infrastructure, and fixed CLI issues that improved stability for thousands of users. Created monitoring dashboards and refactored core services to handle high-scale workloads.
+              I worked on Boundary, HashiCorp&apos;s identity-based access management platform, focusing on performance optimization and reliability. I've also helped resolve performance bottlenecks affecting customers, build load testing infrastructure, and fix CLI issues that improved stability for thousands of users. In addition, I created monitoring dashboards and refactored cloud services to handle high-scale workloads.
             </p>
           </motion.div>
 
@@ -222,7 +222,7 @@ export default function Home() {
               </a>
             </div>
             <p className="text-white/90 leading-relaxed">
-              Built backend infrastructure for Garmin&apos;s subscription billing system. Developed C#/.NET/gRPC microservice features that save the company 100k+ annually and implemented caching systems that improved account API performance. Worked across the stack from database optimization to infrastructure as code, shipping software that directly impacted customer payments and billing workflows.
+              I built backend infrastructure for Garmin&apos;s subscription billing system. Specifically, I developed C#/.NET/gRPC microservice features that save the company 100k+ annually and implemented caching systems that improved account API performance. I also worked across the stack from database optimization to infrastructure as code, shipping software that directly impacted customer payments and billing workflows.
             </p>
           </motion.div>
 
@@ -240,7 +240,7 @@ export default function Home() {
             </div>
             <p className="text-white/50 text-sm mb-4">Overland Park, KS</p>
             <p className="text-white/90 leading-relaxed">
-              Developed internal tools and optimized backend services for healthcare software. Built a document tracking system that streamlined support workflows for multiple engineering teams, and improved database query performance that significantly reduced application load times. Worked with modern web technologies and Java-based microservices to deliver tools that improved developer and consultant productivity.
+              I developed internal tools and optimized backend services for healthcare software. My main projects included building a document tracking system that streamlined support workflows for multiple engineering and consulting teams, as well as improving database query performance to significantly reduce application load times.
             </p>
           </motion.div>
         </motion.div>
@@ -255,7 +255,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-3xl font-medium mb-12 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
         >
-          Projects
+          What I've Built
         </motion.h2>
 
         <motion.div
@@ -427,7 +427,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="text-3xl font-medium mb-12 bg-linear-to-r from-white to-blue-200 bg-clip-text text-transparent"
         >
-          Skills
+          Tech Stack
         </motion.h2>
 
         <motion.div
