@@ -124,10 +124,13 @@ export default function Home() {
           className="prose prose-invert max-w-none"
         >
           <p className="text-white/80 leading-relaxed mb-4">
-            I&apos;m a computer science student at Colby College, graduating in December 2026. I&apos;ve spent my summers interning at HashiCorp, Garmin, and Netsmart, where I&apos;ve worked on distributed systems, performance optimization, and building tools that serve thousands of users.
+            I&apos;m a computer science student at Colby College, graduating in May 2026. I&apos;ve interned at companies like{" "}
+            <a href="https://www.hashicorp.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">HashiCorp</a>, {" "}
+            <a href="https://www.garmin.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Garmin</a>, and {" "}
+            <a href="https://www.ntst.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Netsmart</a> working on distributed systems and backend optimization.
           </p>
           <p className="text-white/80 leading-relaxed">
-            I&apos;m interested in optimizing online experiences, learning new technologies, and building with code. Whether it&apos;s identifying bottlenecks in production systems, designing cache layers to reduce latency, or building tools that make developers&apos; lives easier, I enjoy solving technical challenges that have real impact.
+            In general, I&apos;m interested in building things that bring real value to users.
           </p>
         </motion.div>
       </section>
@@ -270,7 +273,7 @@ export default function Home() {
             <h3 className="text-xl font-medium mb-2">Koetalk</h3>
             <p className="text-white/60 text-sm mb-4">TypeScript, React, Bun, Hono, PostgreSQL, tRPC</p>
             <p className="text-white/80 mb-4">
-              AI-powered language learning app for practicing conversations in 10 languages with real-time speech recognition and text-to-speech.
+              AI-powered language learning app for practicing conversations with real-time speech recognition and TTS.
             </p>
             <a 
               href="https://koetalk.com" 
@@ -500,7 +503,7 @@ export default function Home() {
         >
           <h3 className="text-xl font-medium mb-2">Colby College</h3>
           <p className="text-white/70 mb-1">B.A. in Computer Science</p>
-          <p className="text-white/50 text-sm">GPA: 3.66 | Expected: December 2026</p>
+          <p className="text-white/50 text-sm">GPA: 3.66 | Expected: May 2026</p>
         </motion.div>
       </section>
 
