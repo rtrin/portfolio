@@ -87,7 +87,7 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.6, -0.05, 0.01, 0.99] }}
           className="text-lg text-white/80 leading-relaxed max-w-2xl mb-8"
         >
-          CS student at Colby College that enjoys building distributed systems and optimizing performance at scale.
+          Computer Science student at Colby College with experience in distributed systems and backend/cloud development.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -124,13 +124,13 @@ export default function Home() {
           className="prose prose-invert max-w-none"
         >
           <p className="text-white/80 leading-relaxed mb-4">
-            I&apos;m a computer science student at Colby College, graduating in May 2026. I&apos;ve interned at companies like{" "}
+            I&apos;m a CS student at Colby College, graduating in May 2026. I&apos;ve interned at companies like{" "}
             <a href="https://www.hashicorp.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">HashiCorp</a>, {" "}
             <a href="https://www.garmin.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Garmin</a>, and {" "}
-            <a href="https://www.ntst.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Netsmart</a> working on distributed systems and backend optimization.
+            <a href="https://www.ntst.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Netsmart</a> working on cloud infrastructure, payment systems, and healthcare software respectively.
           </p>
           <p className="text-white/80 leading-relaxed">
-            I&apos;m interested in building things that bring real value to users.
+            I enjoy building things that bring real value to users.
           </p>
         </motion.div>
       </section>
