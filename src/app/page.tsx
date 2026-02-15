@@ -526,6 +526,30 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* Contact Section */}
+      <section className="max-w-4xl mx-auto px-6 py-16 border-t border-white/10 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center"
+        >
+          <h2 className="text-3xl font-medium mb-6">
+            Get In Touch
+          </h2>
+          <p className="text-xl text-white/80 leading-relaxed max-w-2xl mb-8">
+            Have a question, a project idea, or just want to say hi? I&apos;d love to hear from you!
+          </p>
+          <a
+            href="mailto:richardtrinh452@gmail.com"
+            className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border-2 border-blue-400 bg-linear-to-r from-blue-950 to-blue-900 px-6 font-medium text-white transition-all duration-100 [box-shadow:5px_5px_#60a5fa] hover:translate-x-[3px] hover:translate-y-[3px] hover:[box-shadow:0px_0px_#60a5fa]"
+          >
+            Say Hello <Mail size={18} className="ml-2" />
+          </a>
+        </motion.div>
+      </section>
+
       {/* Footer */}
       <footer className="max-w-4xl mx-auto px-6 py-12 border-t border-white/10">
         <motion.p
