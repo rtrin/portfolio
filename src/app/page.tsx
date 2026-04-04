@@ -130,7 +130,7 @@ export default function Home() {
             <a href="https://www.ntst.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline decoration-blue-400/50 hover:decoration-blue-300 transition-all">Netsmart</a>, where I worked on everything from cloud infrastructure to payment systems.
           </p>
           <p className="text-white/80 leading-relaxed">
-            In general, I just like building things that bring real value to people.
+            I like building things that bring real value to users.
           </p>
         </motion.div>
       </section>
